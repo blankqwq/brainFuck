@@ -1,0 +1,21 @@
+[package]
+name = "brain_fuck"
+version = "0.1.0"
+authors = ["blankqwq <1136589038@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name="bi"
+path= "src/main_bf.rs"
+
+[[bin]]
+name="ir"
+path="src/main_ir.rs"
+[[bin]]
+name="jit"
+path="src/main_jit.rs"
+[dependencies]
+dynasm = "0.6"
+dynasmrt = "0.6"
+itertools = "*"
